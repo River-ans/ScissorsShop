@@ -2,7 +2,7 @@ import { NavLink } from './NavLink';
 
 export default function Nav() {
   return (
-    <nav className='ml-6 px-normal w-full'>
+    <nav className='ml-6 px-normal w-full hidden sm:block'>
       <ul className='flex gap-3 text-sm'>
         <li>
           <NavLink href='/scissors'>Scissors</NavLink>

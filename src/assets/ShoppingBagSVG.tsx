@@ -6,7 +6,7 @@ export default function ShoppingBagSVG() {
       viewBox='0 0 24 24'
       strokeWidth={1.5}
       stroke='currentColor'
-      width={25}
+      width={22}
     >
       <path
         strokeLinecap='round'

@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import ScizzSVG from '../../../public/logo/SCIZZ.svg';
 import Link from 'next/link';
 import ScizzLogoSVG from '@/assets/ScizzLogoSVG';
 
