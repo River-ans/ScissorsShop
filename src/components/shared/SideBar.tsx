@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import { useSidebarStore } from '@/stores/sidebarStore';
 import XmarkSVG from '@/assets/XmarkSVG';
-import Nav from './Nav';
 import { NavLink } from './NavLink';
 
 export default function SideBar() {
@@ -22,16 +21,19 @@ export default function SideBar() {
       toggleSidebar(); // 바로 열기
     }
   };
+
   return (
     <div className='relative'>
       {/* 오버레이 */}
       {isOpen && (
         <div
-          className={`fixed inset-0 bg-black bg-opacity-50 z-30`}
+          className={`fixed inset-0 bg-black z-30 transform transition-opacity duration-500 ease-in-out ${
+            isOpen && !isAnimating ? 'opacity-50 ' : 'opacity-0 '
+          }
+        `}
           onClick={handleToggleSidebar}
         />
       )}
-
       {/* 사이드바 */}
       <div
         className={`fixed right-0 top-0 h-full w-64 bg-white shadow-lg z-40 transform transition-transform duration-500 ease-in-out ${
