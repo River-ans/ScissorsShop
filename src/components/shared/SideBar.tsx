@@ -28,7 +28,9 @@ export default function SideBar() {
       {isOpen && (
         <div
           className={`fixed inset-0 bg-black z-30 transform transition-opacity duration-500 ease-in-out ${
-            isOpen && !isAnimating ? 'opacity-50 ' : 'opacity-0 '
+            isOpen && !isAnimating
+              ? 'opacity-50 '
+              : 'opacity-0 pointer-events-none'
           }
         `}
           onClick={handleToggleSidebar}
