@@ -1,4 +1,4 @@
-import { BrandCategoryNav } from '@/components/shared/BrandCategoryNav';
+import { BrandCategoryNav } from '@/components/scissorsPage/BrandCategoryNav';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
