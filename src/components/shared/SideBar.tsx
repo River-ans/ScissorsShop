@@ -49,15 +49,21 @@ export default function SideBar() {
             </button>
           </div>
           <nav className='mt-4 w-full'>
-            <ul className='flex flex-col gap-4 text-lg'>
+            <ul className='flex flex-col gap-4 text-lg  text-gray-500'>
               <li onClick={handleToggleSidebar}>
-                <NavLink href='/scissors'>Scissors</NavLink>
+                <NavLink href='/scissors' activeClassName='text-black'>
+                  Scissors
+                </NavLink>
               </li>
               <li onClick={handleToggleSidebar}>
-                <NavLink href='/services'>Services</NavLink>
+                <NavLink href='/services' activeClassName='text-black'>
+                  Services
+                </NavLink>
               </li>
               <li onClick={handleToggleSidebar}>
-                <NavLink href='/contact'>Contact</NavLink>
+                <NavLink href='/contact' activeClassName='text-black'>
+                  Contact
+                </NavLink>
               </li>
             </ul>
           </nav>

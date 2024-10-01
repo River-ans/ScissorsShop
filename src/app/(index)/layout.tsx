@@ -16,7 +16,7 @@ export default function MainLayout({
     <>
       <Header />
       <SideBar />
-      <div className='px-normal'>{children}</div>
+      <div>{children}</div>
     </>
   );
 }

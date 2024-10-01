@@ -1,3 +1,7 @@
+'use client';
+
+import { redirect } from 'next/navigation';
+
 export default function Scissors() {
-  return <>page</>;
+  redirect('scissors/view-all');
 }
